@@ -1,7 +1,16 @@
+### c++
+
 ```c++
 #include <iostream>  
 int main() {      
-	std::cout << "Hello, world!" << std::endl;     
-	 return 0;  
+	return 0;  
 }
+```
+
+### python
+
+```python
+x = 2
+print(x) 
+
 ```
