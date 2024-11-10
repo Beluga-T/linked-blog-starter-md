@@ -8,8 +8,11 @@
 
 - `computerised`: Selected branches of travel agents Thomas Cook and AT May are using the `computerised` system, with the details of about 100 selected hotels.
 
-``` c++
+```c++
+#include<iostream>
+
 function (int x) {
 	return x;
 }
+
 ```
