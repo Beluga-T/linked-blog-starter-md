@@ -9,7 +9,6 @@
 - `computerised`: Selected branches of travel agents Thomas Cook and AT May are using the `computerised` system, with the details of about 100 selected hotels.
 
 ```python
-int x = 2
-print x 
-
+x = 2
+print(x)
 ```
