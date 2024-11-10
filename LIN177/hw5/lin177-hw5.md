@@ -25,5 +25,7 @@
 ### Surface Form: `charge`
 1. `{charge/V}`:  
 	- Eg: We don't `charge` extra for coffee, service or bread.
-	-  helper words to identify : `fee` `you` `prices` `interests` `higher`
-2. `{}`
+	-  **helper words to identify** : `fee`, `you` ,`prices` ,`interests`, `higher`
+2. `{charge/N}`
+	- He denied a `charge` of **murder** and this plea was accepted by the Crown.
+	-  **helper words to identify** : `murder`,`trial`, `assault`,`legal`,`against`
