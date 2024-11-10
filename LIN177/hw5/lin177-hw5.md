@@ -23,3 +23,7 @@
 ## Part 2: A surface form that may belong to two different lemmas with different parts of speech
 
 ### Surface Form: `charge`
+1. `{charge/V}`:  
+	- Eg: We don't `charge` extra for coffee, service or bread.
+	-  helper words to identify : `fee` `you` `prices` `interests` `higher`
+2. `{}`
