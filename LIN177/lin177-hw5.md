@@ -20,6 +20,7 @@
 - `broke`: I'm sorry I `broke` you in sacrifice.
 - `broken`: Could not stay long in the room with it, but the ice had been `broken`.
 
+---
 ## Part 2: A surface form that may belong to two different lemmas with different parts of speech
 
 ### Surface Form: `charge`
