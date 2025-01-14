@@ -5,3 +5,7 @@
 ###  Books required
 - engaging cinema - Bill Nichols
 - film anaysis - Jeffery Geiger
+### Psycho
+#### Opening of Psycho 
+- camera movement
+- approaching windows shot
