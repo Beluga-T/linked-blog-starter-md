@@ -15,4 +15,4 @@
 - guilty ß
 - A key transitional figure  - theater to cinema
 - AH's world creation - AH's single set films (Lifeboat. Rope, RW)
-- Rear Window is shot on a single set film.
+- Rear Window is shot on a single set filmß
