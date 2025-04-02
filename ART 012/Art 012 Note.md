@@ -33,4 +33,7 @@ when the scream/high pitch sounds came out the singer face looks pain and strugg
 
 
 
-
+### light
+the **WINDOW LIGHT STREAKS**
+coloring contrast
+traing rope - strong backlight silhouette
