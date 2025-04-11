@@ -70,3 +70,15 @@ radiative energy : E carried by light
 1 Joule = $1kg\ m^2/s^2$ (E = 1/2 mv^2)
 1 cal = 4184 J
 1 erg = 1g cm2/s^2
+
+# lec 5
+![[lecture5_AST25_2025.pdf]]
+
+# lec 6
+# Facts of lights
+- light in a vacuum always moves at the same speed of $c = 300,000 km/s$
+- light can act both as a particle and as a wave.
+	- a photon is a particle of light
+- light us an ELECTROMAGNETIC wave.
+- ELECTROMAGNETIC waves interact with charged particles.
+- 
