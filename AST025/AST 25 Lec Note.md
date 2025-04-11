@@ -74,11 +74,68 @@ radiative energy : E carried by light
 # lec 5
 ![[lecture5_AST25_2025.pdf]]
 
+___
 # lec 6
-# Facts of lights
+## Facts of lights
 - light in a vacuum always moves at the same speed of $c = 300,000 km/s$
 - light can act both as a particle and as a wave.
 	- a photon is a particle of light
 - light us an ELECTROMAGNETIC wave.
 - ELECTROMAGNETIC waves interact with charged particles.
-- 
+
+## Wavelength
+- units are cm(or nanometers or Angstroms)
+## frequency 
+- frequency is the num of waves passing any point each second.
+## Speed
+- km/s
+
+## Energy
+- units in J
+
+## Properties of Light
+wavelength and freq are inversely porp.$$\lambda = \frac{c}{f}$$
+Energy and freq are directly proportional $$ E = hf$$
+$$h = 6.6 \times 10^-34 j/sec$$
+## The electromagnetic spectrum
+- long wavelength are redder
+- short wavelength are bluer
+
+## making a spectrum
+- A prism bends light of different wavelength by different angles producing the spectrum.
+# Spectra
+a spectrum is a map of how much light is emitted at each wavelength.
+# Thermal radiation
+
+## What is thermal radiation
+
+- humans emit lights in infrared.
+$$B_v(v,T ) = \frac{2hv^3}{c^2} \times \frac{1}{e^\frac{hv}{kt} - 1}$$
+
+if its hotter, its peak is at a shorter wavelength. it has a higher surface brightness.
+
+-  blue star  -> high temp star (18000k)
+
+## why  hotter = bluer?
+- E = X x kT
+- higher temp <-> higher energy <-> shorter wavelength(bluer)
+$$\lambda = \frac{hc}{E} = \frac{hc}{XkT} = 2900000 nm / T$$
+
+$$\lambda_{peak} = 2900000 /T$$
+- T in kelvin 
+- lambda in nm
+- Wien law hotter means a bluer peak
+
+## Energy, Power, Flux
+E : unit in J
+Luminosity/Power: energy emitted per second
+Units are Watts(W) 1 watt = 1 J/sec
+Flux or surface brightness: power emitted per square meter $(W/m^2)$g
+
+Luminosity is surface brightness multiplied by surface area
+
+## Rule #2 of thermal radiation
+If its hotter, it has a higher surface brightness.
+
+Surface brightness = $\sigma T^4$
+(hotter means higher surface brightness)
