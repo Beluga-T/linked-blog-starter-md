@@ -139,3 +139,33 @@ If its hotter, it has a higher surface brightness.
 
 Surface brightness = $\sigma T^4$
 (hotter means higher surface brightness)
+
+Colder ->red
+
+# lec 7
+![[lecture7_AST25_2025.pdf]]
+
+# lec 8
+
+# Telescope
+## Detecting Faint Objects
+- build bigger telescopes
+- use better detectors
+- larger CCD 
+- choosing your site wisely
+	- darker place better
+- Harder to see detail in distant objects.
+- Diffraction limit (angular resolution)of a telescope or your eye is set by its diameter (size)
+	- $\theta_{limit} \sim \phi \\/ D$
+	- bigger D means reslove more object
+	- our eye has a limit of around 2 arcmin
+	- many astronomical object have size of arcseconds 
+
+## Another path to bigger telescope
+use fancy techniques:
+- in radio you can use interferometry to combine many telescopes to act as one very big telescope
+- this gives you great angular resolution 
+	- telescope diameter are measured in km
+- improve angular resolution but not change in amount data collection
+
+### Turbulence in the atomosphere bluer our view of distant objects 
