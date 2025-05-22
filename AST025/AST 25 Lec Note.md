@@ -167,5 +167,13 @@ use fancy techniques:
 - this gives you great angular resolution 
 	- telescope diameter are measured in km
 - improve angular resolution but not change in amount data collection
-
-### Turbulence in the atomosphere bluer our view of distant objects 
+- Using fancy techniques : adaptive optics
+### Turbulence in the atmosphere "bluer" our view of distant objects 
+## Things we want from tele
+- make the as big as possible
+- as much wavelength as possible
+## what do astronomes do with telescopes
+- imaging 
+- spectroscopy :
+- Time monitoring: measuring how light output varies with tiem
+- 
