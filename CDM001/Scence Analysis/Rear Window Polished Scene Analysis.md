@@ -9,3 +9,18 @@ Hitchcock has used crosscutting to provide a sense of duality between Jeff and L
 The film critiques the surveillance culture prevalent in post-war America, where privacy was increasingly under threat. Lisa's act is a challenge to the conventions, reflecting a widening awareness of unseen dangers and the crumbling of established female roles. She represents an end to meek dependence and the adoption of positive action through her putting herself in danger, which mirrors changes in broader cultural shifts at the time.
 
 In conclusion, this scene analysis highlights the film's exploration of themes through its characters' actions, Hitchcock's formal techniques, and cultural reflections, offering a comprehensive view of Rear Window's impact and relevance.
+
+### 3.1. SYNTAX OF THE LAMBDA-CALCULUS
+
+Matching parentheses may be dropped or added for convenience. Here are some examples of $\lambda$-terms (and their abbreviation):
+
+$$\begin{aligned}
+& y \\
+& (yx) \\
+& \lambda x. (yx) \\
+& (\lambda x. (yx)) \\
+& (((\lambda x. (\lambda y. (yx))) ) z) \\
+& (((\lambda x. (\lambda y. (yx))) ) z) w)
+\end{aligned}$$Note that$\lambda x. \, yx$is an abbreviation for$\lambda x. (yx)$, not $(\lambda x. yx)$.
+
+The variables occurring in a $\lambda$-term are free or bound.
