@@ -29,6 +29,7 @@ Electromagnetic force has a long range , but astronomical object are not charged
 G force due to an object is stronger when the object has a larger mass.
 
 When an obj is spherical you can pretend that all the mass is concentrated in a single point at the center of the sphere
+
 $$F_{g}  = G \frac{M_1M_2}{d^{2}}$$
 ___
 ## Momentum
