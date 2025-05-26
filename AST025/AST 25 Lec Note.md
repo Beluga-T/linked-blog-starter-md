@@ -17,6 +17,16 @@ Parallax refers to the apparent shift in an object's position when viewed from 
 ## Slides:
 ![[lecture3_AST25_2025.pdf]]
 
+However, distances within the Solar System get awkward with km
+
+- The planets are much smaller than the distances between them
+- Distance from the Sun to the Earth: 
+  $d = 150,000,000 \text{km} = 1.5 \times 10^8 \text{km}$- So one approach is to use scientific notation
+- Here is a case where we make up a new unit to deal with all of those zeros:$1 \text{AU} = \text{Sun-Earth distance} = 1.5 \times 10^8 \text{km}$
+- The astronomical unit was originally conceived as the average of Earth's aphelion and perihelion $1.49597870700 \times 10^8 \text{km}$
+
+--- 
+
 # Lec 4
 ## Nature has four foundational force
 
