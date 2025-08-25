@@ -165,7 +165,7 @@
 - Fragments of rock and ash **ejected during explosive volcanic eruptions**, including lapilli and volcanic bombs.
 
 ### 🔹 What is the age and dominant component of Mt. Rainier?
-- **Pleistocene to Holocene age**, dominated by **andesitic lava and pyroclastic material**.
+- **cenozoic (50,000 yrs)**, dominated by **andesitic lava and pyroclastic material**.
 
 ### 🔹 How do alpine glaciers work?
 - Ice forms in **zone of accumulation** and melts in **zone of ablation**. Movement depends on snow input and melt rates.
