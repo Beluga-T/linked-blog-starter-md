@@ -56,15 +56,52 @@ Another perspective of bias in the dataset is there area many high correlated Fe
 ![[Pasted image 20250927001021.png]]
 This is the complete Correlation Matrix we can see there are many Red boxes in the graph which shows the 2 feature are highly correlated to each other. Many of them are almost has 1.00 value which indicate very strong positive relationship. If not dropping 1 feature in each pair, both of the feature will be learnt by model causing model and neglect other feature that may actually help.
 
-I set the threshold of highly correlated pair as absolute Correlation value > 0.9 and found 38 pairs in all 81 features. ![[Pasted image 20250927002544.png]]
+I set the threshold of highly correlated pair as `absolute Correlation value > 0.5` and found `246 pairs` in all 81 features. ![[Pasted image 20250927002544.png]]
 As above graph shown, the 2 most highly correlated pair has absolute corr value of 1. This implies the paired features are either duplicates or strict linear transforms of one another. Such redundancy creates modeling bias since model can effectively double-count the same signal. Perfectly redundant features cause systematic favoritism toward that latent factor.
 
 ## *2.2 Experiment High Correlated Pair Bias*
 
 #### 2.2.1 Hypothesis
 High Correlated pair will introducing bias to model causing model underperformed.
-
 #### 2.2.2 Experiment setting
  Dataset: `feature-envy.arff` , target `is_feature_envy`.
+- **Controlled Variable: Feature Selection**
+	- Baseline Group: No Feature Selection, all 81 feature feed into the group. 
+	- Correlation-Reduced Group: Select `top 10 Mutual Information` score feature, then among those 10 features, for each pair with `absolute correlation value greater than 0.5`, drop the lower MI score Feature. `Final subset: 3 features`
 - Data Split: Train set (80%), Test set (20%) , Stratify method.
-- Baseline Group: No Feature Selection, all 81 feature feed into the group.
+- **Models Setting**: 
+	- Logistic Regression (balanced, `liblinear`), 
+	- SVM (RBF, balanced), 
+	- Naive Bayes.
+#### 2.2.3 Results (Baseline -> MI+ corr pair drop)
+
+| Model               | Macro-F1    | ΔF1   | Recall (class 1) | ΔRecall | Accuracy    | ΔAcc  |
+| ------------------- | ----------- | ----- | ---------------- | ------- | ----------- | ----- |
+| Logistic Regression | 0.67 → 0.73 | +0.06 | 0.64 → 0.79      | +0.15   | 0.77 → 0.81 | +0.04 |
+| SVM (RBF)           | 0.65 → 0.73 | +0.08 | 0.64 → 0.93      | +0.29   | 0.76 → 0.80 | +0.04 |
+| Naïve Bayes         | 0.64 → 0.70 | +0.06 | 0.50 → 0.61      | +0.11   | 0.77 → 0.82 | +0.05 |
+The results in Table 2.2.3 demonstrate that combining Mutual Information feature selection with a correlation check (threshold 0.5) yields consistent improvements across all three models.
+
+Logistic Regression gains +0.06 Macro-F1 and +0.15 minority recall, showing that the removal of redundant features rebalanced coefficients toward more discriminative signals for the rare “smell” class. Accuracy also rose modestly from 0.77 → 0.81.
+ 
+SVM (RBF) benefits the most, with Macro-F1 rising from 0.65 → 0.73 and minority recall nearly doubling (0.64 → 0.93). This suggests that correlated features in the baseline space had been distorting the margin; once reduced to orthogonal, high-MI metrics, the decision boundary became much more effective at capturing minority cases.
+
+Naïve Bayes also improves, Macro-F1 climbs from 0.64 → 0.70 and recall increases by +0.11. Aggressively pruning correlated features reduced some of the bias introduced by redundant signals, allowing it to better approximate its underlying distributional assumptions.
+
+#### 2.2.4 Analysis of Correlation Bias Impact 
+For Logistic Regression, the results show that applying MI reduction and correlation filtering led to clear improvements over the baseline. Macro-F1 and recall for class 1 both increased. By eliminating these correlated pairs, Logistic Regression placed its separating hyperplane more effectively, capturing more positive cases without reducing overall accuracy
+
+For Naïve Bayes, correlation filtering also improved results compared to the baseline. Both Macro-F1 and recall for class 1 increased, showing that removing redundant variables mitigated the double-counting problem caused by correlated features.
+
+For SVM with RBF kernel, the correlation-reduced model outperformed its baseline by achieving higher Macro-F1 and notably stronger recall for class 1. By filtering out correlated features, the surface became less distorted, allowing the SVM to capture more true positives and raise recall for class 1 while keeping accuracy stable.
+
+Since the reduced dataset has only 3 feature, I draw this  3D visualization (see below) to see the actual decision plane of the svm. (also see live 3d visualization on Colab notebook)
+![[newplot (3).png|550]]
+
+#### 2.2.5 Correlation Experiment Summery
+
+The result proof the hypothesis. The experiments show that highly correlated features bias the models by double-counting signals, reducing sensitivity to minority cases. After applying MI reduction with correlation filtering, all three models improved over their baselines. Logistic Regression and Naïve Bayes gained in Macro-F1 and recall, while SVM showed the strongest improvement.
+
+## 3. Conclusion
+![[Pasted image 20250927221911.png|600]]
+Our experiments show that dataset biases from skewed distributions and correlated features significantly distort model behavior. Skewness bias made Naïve Bayes violate its Gaussian assumption and compressed decision margins for SVM and Logistic Regression; after PowerTransformer, all models gained Macro-F1 and recall, especially on the minority “feature envy” class. Correlation bias led models to double-count redundant signals, reducing sensitivity to class 1. After MI + correlation filtering, all models improved further, with SVM showing the strongest recall jump (0.64 → 0.93) and a much cleaner decision surface
