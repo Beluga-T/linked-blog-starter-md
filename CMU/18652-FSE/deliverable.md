@@ -1,5 +1,5 @@
 # Step A - prototype
-
+![[stepa.jpg]]
 # Step B – Use-Case Specification : Select Payment Method
 
 **Participating Actors**  
@@ -90,10 +90,10 @@ Then system shows “Please try again later.”
 ### Rules (reused)
 Same as above (use-case rules).
 
+---
 
 # Step D – Consistency Check
-Each use-case step maps to one or more user-story scenarios; no missing validations.  
-Use case and user story are fully aligned.
+all good, i guess
 
 ---
 # Step E – INVEST Breakdown
