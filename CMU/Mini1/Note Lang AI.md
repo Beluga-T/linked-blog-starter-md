@@ -77,3 +77,19 @@ Pormpting Strategies
 - Prefer Chain-of-Thought prompting for low-cost reasoning, Self-Consistency for problems with multiple plausible solutions, and Tree-of-Thoughts for complex tasks that require exploring alternative reasoning paths.
 
 ---
+
+
+## Jan 20
+
+## LangGraph
+
+![[Lecture_3_LLM_App_Development.pdf]]
+
+### LangChain 
+- open -source framework
+- aims to make apps able to reason
+- is a eco system with standard.
+- NCAB
+### LangGraph 
+- does not interact with llm directly!
+- 
